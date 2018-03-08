@@ -1,0 +1,74 @@
+@mixin color-background($name, $color) {
+  &#{$name} .reveal {
+    background: #{$color};
+    color: $white;
+    h1, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+}
+
+@mixin color-corner-background($name, $color) {
+  &#{$name} {
+    background: $white;
+    body::before {
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: $white;
+      transform-origin: left bottom;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: skew(0, -15deg);
+      z-index: 1;
+    }
+    body::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #{$color};
+      transform-origin: left bottom;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@mixin navigate-arrow($name, $direction, $primary, $secondary) {
+  .navigate-#{$name} {
+    border-#{$direction}-color: #{$primary} !important;
+    &:hover {
+      border-#{$direction}-color: #{$secondary} !important;
+    }
+  }
+}
+
+@mixin colorize-image-background($name, $color) {
+  &#{$name} .reveal {
+    color: $white;
+    h1, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+    &::after{
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: $color;
+      opacity: 0.85;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@mixin navigation-arrow--dark(){
+  .udacity {
+    @include navigate-arrow('left', 'right', $slate, $gray-dark);
+    @include navigate-arrow('right', 'left', $slate, $gray-dark);
+    @include navigate-arrow('up', 'bottom', $slate, $gray-dark);
+    @include navigate-arrow('down', 'top', $slate, $gray-dark);
+  }
+}

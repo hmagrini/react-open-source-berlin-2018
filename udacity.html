@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Udacity Reveal.JS Boilerplate</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/udacity.css">
+  <link rel="stylesheet" href="css/udacity-overrides.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="lib/css/flexboxgrid.min.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body class="udacity">
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- START SLIDE -->
+      <section class="row start-xs"
+               data-state="segue segue-lower-corner--green-purple">
+        <h1>Udacity HTML5</h1>
+        <h3 class="subtitle">Slide JS Deck Version</h3>
+      </section>
+      <!-- END SLIDE -->
+
+      <!-- START SLIDE -->
+      <section>
+        <section class="row start-xs"
+                 data-state="segue segue-lower-corner--green-purple">
+          <h1>Corner Gradient</h1>
+          <h3 class="subtitle">See below for more colors</h3>
+          <aside class="notes">
+            These are Speaker notes, check https://github.com/hakimel/reveal.js#speaker-notes for more info
+          </aside>
+        </section>
+
+        <section class="row start-xs"
+                 data-state="segue segue-lower-corner--blue-green">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                 data-state="segue segue-lower-corner--purple-magenta">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                 data-state="segue segue-lower-corner--magenta-orange">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+      </section>
+      <!-- END SLIDE -->
+
+      <!-- START SLIDE -->
+      <section>
+        <section class="row start-xs"
+                data-state="segue segue--blue">
+          <h1>Segue + Gradient</h1>
+          <h3 class="subtitle">See below for more colors</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="segue segue-gradient--green-purple">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="segue segue-gradient--blue-green">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="segue segue-gradient--purple-magenta">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="segue segue-gradient--magenta-orange">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+      </section>
+      <!-- END SLIDE -->
+
+
+      <section class="row start-xs"
+              data-background-image="/images/code-editor.jpg">
+        <h1 class="light">Segue + Image</h1>
+        <h3 class="subtitle">Subtitle</h3>
+      </section>
+
+      <!-- START SLIDE -->
+      <section>
+        <section class="row start-xs"
+                data-state="colorize colorize--blue"
+                data-background-image="/images/code-editor.jpg">
+          <h1>Segue + Colorized Image</h1>
+          <h3 class="subtitle">See below for more colors</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="colorize colorize-gradient--green-purple"
+                data-background-image="/images/code-editor.jpg">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="colorize colorize-gradient--blue-green"
+                data-background-image="/images/code-editor.jpg">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="colorize colorize-gradient--purple-magenta"
+                data-background-image="/images/code-editor.jpg">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+
+        <section class="row start-xs"
+                data-state="colorize colorize-gradient--magenta-orange"
+                data-background-image="/images/code-editor.jpg">
+          <h1>Slide Title</h1>
+          <h3 class="subtitle">Subtitle</h3>
+        </section>
+      </section>
+      <!-- END SLIDE -->
+
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // 16:9 RATIO
+        /* Comment this to disable */
+        width: 1920,
+        height: 1080,
+
+        // 4:3 RATIO
+        /* Remove this comment to enable
+        width: 960,
+        height: 700,
+        */
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.5,
+
+        multiplex: {
+          // Example values. To generate your own, see the socket.io server instructions.
+          secret: '14915054750047638589', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+          id: '6c89e7ccf3575768', // Obtained from socket.io server
+          url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+        },
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          // Default dependencies
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+
+          // Multiplexing
+          { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+		      { src: 'plugin/multiplex/master.js', async: true },
+
+		      // and if you want speaker notes
+		      // { src: 'plugin/notes-server/client.js', async: true }
+
+        ]
+      });
+  </script>
+</body>
+
+</html>

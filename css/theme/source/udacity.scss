@@ -1,0 +1,33 @@
+/**
+ * Udacity theme for reveal.js.
+ * 2017 - Hernán Magrini
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+@import "../template/udacity-palette";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Background of the presentation
+$backgroundColor: $white;
+
+// Primary/body text
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: $gray-dark;
+
+// Headings
+$headingFont: 'Open Sans', sans-serif;
+$headingColor: $gray-dark;
+// Links and actions
+$linkColor: $blue-udacity;
+
+// Text selection
+$selectionBackgroundColor: $magenta;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

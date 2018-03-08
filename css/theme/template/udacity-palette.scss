@@ -1,0 +1,59 @@
+
+
+// Color Palette
+// ========================================================
+
+// Main Palette: highlights, backgrounds, objects
+// ========================================================
+$blue-udacity:      #02b3e4;
+$turquoise:         #02ccba;
+$slate:             #2e3d49;
+$white:             #fff;
+$magenta:           #ff5483;
+$orange:            #ffa234;
+$purple:            #a951ed;
+
+//797979
+
+// Core Grays: type styles
+// ========================================================
+$gray-dark:         #525c65;
+$gray-medium:       #7d97ad;
+$gray:              #bcc9d4;
+$gray-light:        #dbe2e8;
+
+// Secondary Grays: light backgrounds
+// ========================================================
+$silver:            #fafbfc;
+$beige-light:       #f4f4ef;
+
+// Additional Colors: validation and messaging
+// ========================================================
+$red-orange:        #f95c3c;
+$green:             #15c26b;
+$yellow:            #ecc81a;
+
+// Other Colors
+// ========================================================
+$red:               #f04546;
+$yellow-dark:       #ffae0c;
+$blue-dark:         #028bb1;
+$blue-light:        #91daee;
+$beige-dark:        #dfdfd1;
+$beige-medium:      #eaeae0;
+$slate-dark:        #1c262f;
+$black:             #000;
+
+// Gradient Values
+$blue-green-gradient: linear-gradient(90deg, $turquoise 0%, $blue-udacity 100%);
+$green-purple-gradient: linear-gradient(90deg, $turquoise 0%, $purple 100%);
+$purple-magenta-gradient: linear-gradient(90deg, $magenta 0%, $purple 100%);
+$magenta-orange-gradient: linear-gradient(90deg, $orange 0%, $magenta 100%);
+$tan-light-blue-gradient: linear-gradient(90deg, #EAFAFF 0%, #F7F7F7 100%);
+
+// Gradient to Color Scheme Mapping
+$color_scheme1: $blue-green-gradient;
+$color_scheme2: $green-purple-gradient;
+$color_scheme3: $purple-magenta-gradient;
+$color_scheme4: $magenta-orange-gradient;
+$disabled: $tan-light-blue-gradient;

@@ -1,0 +1,209 @@
+@import "./theme/template/udacity-mixins";
+@import "./theme/template/udacity-palette";
+
+/**
+* States section
+* Needs to be separate from .udacity since it's applied
+* from the <html> element and not the <section> containers
+*/
+.segue {
+  @include color-background('--blue', $blue-udacity);
+
+  &-gradient {
+    @include color-background('--blue-green', $blue-green-gradient);
+    @include color-background('--green-purple', $green-purple-gradient);
+    @include color-background('--purple-magenta', $purple-magenta-gradient);
+    @include color-background('--magenta-orange', $magenta-orange-gradient);
+  }
+
+  &-lower-corner {
+    @include color-corner-background('--blue-green', $blue-green-gradient);
+    @include color-corner-background('--green-purple', $green-purple-gradient);
+    @include color-corner-background('--purple-magenta', $purple-magenta-gradient);
+    @include color-corner-background('--magenta-orange', $magenta-orange-gradient);
+  }
+
+  @include navigation-arrow--dark();
+
+}
+
+.colorize {
+  @include colorize-image-background('--blue', $blue-udacity);
+
+  &-gradient {
+    @include colorize-image-background('--blue-green', $blue-green-gradient);
+    @include colorize-image-background('--green-purple', $green-purple-gradient);
+    @include colorize-image-background('--purple-magenta', $purple-magenta-gradient);
+    @include colorize-image-background('--magenta-orange', $magenta-orange-gradient);
+  }
+
+  @include navigation-arrow--dark();
+
+}
+
+.udacity-logo--white_show {
+  .udacity-logo--white {
+    display: block;
+  }
+
+  .reveal .controls:after {
+    content: "" !important;
+  }
+}
+
+.image-with-white-bg {
+  .reveal .controls:after {
+    color: $blue-udacity !important;
+  }
+}
+
+
+// Global styles
+.udacity {
+
+  section.row {
+    display: flex !important;
+    height: 100%;
+  }
+
+  h1, h2 {
+    text-transform: none;
+  }
+
+  .light {
+    color: $white;
+  }
+  .subtitle {
+    color: $blue-udacity;
+  }
+
+  @include navigate-arrow('left', 'right', $blue-udacity, $blue-light);
+  @include navigate-arrow('right', 'left', $blue-udacity, $blue-light);
+  @include navigate-arrow('up', 'bottom', $blue-udacity, $blue-light);
+  @include navigate-arrow('down', 'top', $blue-udacity, $blue-light);
+
+  .reveal .controls {
+
+    width: 160px;
+    height: 30px;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+
+    button {
+      transform: scale(0.75);
+    }
+
+    &:after {
+      vertical-align: top;
+      color: $white;
+      font-size: 0.65em;
+      content: "@hermagrini";
+    }
+
+    .navigate-up {
+      top: -35px;
+      left: 68px;
+    }
+
+    .navigate-down {
+      top: 30px;
+      left: 68px;
+    }
+
+    .navigate-right {
+      left: 160px;
+      top: 3px;
+    }
+
+    .navigate-left {
+      top: 3px;
+      left: -35px;
+    }
+  }
+
+  .unstyled {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .javascript {
+    max-height: none !important;
+  }
+
+  .reveal pre {
+    font-size: 0.7em;
+    box-shadow: none;
+  }
+
+  mark {
+    background-color: #ca2f5a;
+    color: white;
+    .hljs-string {
+      color: white;
+    }
+  }
+  &-logo--white {
+    width: 350px;
+    position: absolute;
+    display: none;
+    left: 0;
+    bottom: 0;
+  }
+
+  .bar-set {
+    font-size: 1em;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      li {
+        height: 45px;
+        background-color: $white;
+        content: '';
+        line-height: 45px;
+        text-align: right;
+        padding-top: 1px;
+        padding-right: 3px;
+        span {
+          background: linear-gradient(90deg, #ffa234 0%, #ff5483 100%);
+          font-weight: 900;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .bar-row {
+    padding: 15px 0;
+    min-height: 35px;
+    clear: both;
+  }
+  .bar-label {
+    padding-right: 20px;
+    display: inline-block;
+    float: left;
+    text-align: right;
+  }
+
+  .loading-example {
+    &_container {
+      position: absolute;
+      height: 60%;
+      width: 55%;
+      top: 50%;
+      transform: translate(3%, -57%);
+      img, video {
+        position: absolute;
+        top:0;
+      }
+    }
+  }
+}
+
+
